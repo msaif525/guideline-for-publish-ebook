@@ -56,23 +56,85 @@ font-style: inherit;">1</span></span></code></pre></div></div>
 
 
 <p>Here is the complete, start-to-finish workflow for creating, configuring, and publishing a Quarto book using RStudio and GitHub. You can save this as a reference guide for your current and future eBook projects.</p>
-<section id="phase-1-local-project-setup" class="level3">
-<h3 class="anchored" data-anchor-id="phase-1-local-project-setup">Phase 1: Local Project Setup</h3>
+<section id="phase-1-local-project-setup" class="level1">
+<h1>Phase 1: Local Project Setup</h1>
 <ol type="1">
-<li><strong>Create the Project Directory</strong>
+<li><p><strong>Create the Project Directory</strong></p>
 <ul>
-<li>Open RStudio and navigate to <strong>File &gt; New Project &gt; New Directory &gt; Quarto Book</strong>.</li>
-<li><strong>Crucial:</strong> Name your directory using hyphens or underscores, with no spaces (e.g., <code>applied-statistics-probability-engineers</code>). Spaces can break command-line tools and LaTeX rendering.</li>
-<li>Check the boxes for <strong>Create a git repository</strong> and your preferred engine (e.g., <strong>Knitr</strong>).</li>
-<li>Click <strong>Create Project</strong>.</li>
+<li><p>Open RStudio and navigate to <strong>File &gt; New Project &gt; New Directory &gt; Quarto Book</strong>.</p></li>
+<li><p><strong>Crucial:</strong> Name your directory using hyphens or underscores, with no spaces (e.g., <code>applied-statistics-probability-engineers</code>). Spaces can break command-line tools and LaTeX rendering.</p></li>
+<li><p>Check the boxes for <strong>Create a git repository</strong> and your preferred engine (e.g., <strong>Knitr</strong>).</p></li>
+<li><p>Click <strong>Create Project</strong>.</p></li>
 </ul></li>
-<li><strong>Configure the Book Details</strong>
+<li><p><strong>Configure the Book Details</strong></p>
 <ul>
-<li>Open the <code>_quarto.yml</code> file. This is the brain of your book.</li>
-<li>Set your human-readable title, author details, and ensure there are no duplicate top-level keys.</li>
-<li><em>Example structure:</em></li>
+<li><p>Open the <code>_quarto.yml</code> file. This is the brain of your book.</p></li>
+<li><p>Set your human-readable title, author details, and ensure there are no duplicate top-level keys (like having <code>format:</code> listed twice).</p></li>
+<li><p><em>Example structure:</em></p></li>
 </ul></li>
 </ol>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-1603699550.png" class="img-fluid"></p>
+</section>
+<section id="phase-2-version-control-git-github" class="level1">
+<h1>Phase 2: Version Control (Git &amp; GitHub)</h1>
+<ol type="1">
+<li><p><strong>Commit Files Locally</strong></p>
+<ul>
+<li><p>Open the <strong>Terminal</strong> tab in RStudio (bottom-left pane).</p></li>
+<li><p>Track and commit your initial files by running:</p></li>
+</ul></li>
+</ol>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-1678564164.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Create the Remote Repository</strong></p>
+<ul>
+<li><p>Go to GitHub.com and create a <strong>New Repository</strong>.</p></li>
+<li><p>Name it to match your folder (e.g., <code>applied-statistics-probability-engineers</code>).</p></li>
+<li><p><strong>Crucial:</strong> Leave the repository completely blank. Do <em>not</em> check the boxes to add a README, .gitignore, or License.</p></li>
+</ul></li>
+<li><p><strong>Link and Push</strong></p>
+<ul>
+<li><p>Copy the terminal commands provided by GitHub under the section titled <em>“…or push an existing repository from the command line”</em>.</p></li>
+<li><p>Paste them into your RStudio Terminal. It will look like this:</p></li>
+</ul></li>
+</ul>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-2500212516.png" class="img-fluid"></p>
+</section>
+<section id="phase-3-publishing-to-the-web" class="level1">
+<h1>Phase 3: Publishing to the Web</h1>
+<ol type="1">
+<li><p><strong>Render and Publish via Quarto</strong></p>
+<ul>
+<li>In your RStudio Terminal, run the built-in publishing command:</li>
+</ul></li>
+</ol>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-2534608703.png" class="img-fluid"></p>
+<ul>
+<li><p>Quarto will automatically render your <code>.qmd</code> files into HTML, push them to a hidden <code>gh-pages</code> branch on your GitHub repository, and configure GitHub Pages to host your live website.</p></li>
+<li><p>A browser window will open automatically with your live URL.</p></li>
+</ul>
+</section>
+<section id="phase-4-the-daily-update-workflow" class="level1">
+<h1>Phase 4: The Daily Update Workflow</h1>
+<p>Whenever you write a new chapter, edit <code>_quarto.yml</code>, or add local files (like PNG diagrams or datasets), follow this three-step cycle to update your live book:</p>
+<ol type="1">
+<li><p><strong>Save and Commit</strong></p>
+<ul>
+<li><p>Save your files in RStudio.</p></li>
+<li><p>In the Terminal, run:</p></li>
+</ul></li>
+</ol>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-155370567.png" class="img-fluid"></p>
+<p><strong>Push Code to GitHub</strong></p>
+<ul>
+<li>Send your source code updates to your main repository:</li>
+</ul>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-1365084228.png" class="img-fluid"></p>
+<p><strong>Update the Live Website</strong></p>
+<ul>
+<li>Tell Quarto to rebuild the HTML and update the public link:</li>
+</ul>
+<p><img src="https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/images/clipboard-1130336772.png" class="img-fluid"></p>
 
 
 </section>
