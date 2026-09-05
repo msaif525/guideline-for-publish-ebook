@@ -46,6 +46,45 @@ font-style: inherit;">1</span></span></code></pre></div></div>
   <media:content url="https://msaif525.github.io/guideline-for-publish-ebook/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>How to Publish a Quarto Book using GitHub</title>
+  <dc:creator>Mohammad Saifuddin</dc:creator>
+  <link>https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Here is the complete, start-to-finish workflow for creating, configuring, and publishing a Quarto book using RStudio and GitHub. You can save this as a reference guide for your current and future eBook projects.</p>
+<section id="phase-1-local-project-setup" class="level3">
+<h3 class="anchored" data-anchor-id="phase-1-local-project-setup">Phase 1: Local Project Setup</h3>
+<ol type="1">
+<li><strong>Create the Project Directory</strong>
+<ul>
+<li>Open RStudio and navigate to <strong>File &gt; New Project &gt; New Directory &gt; Quarto Book</strong>.</li>
+<li><strong>Crucial:</strong> Name your directory using hyphens or underscores, with no spaces (e.g., <code>applied-statistics-probability-engineers</code>). Spaces can break command-line tools and LaTeX rendering.</li>
+<li>Check the boxes for <strong>Create a git repository</strong> and your preferred engine (e.g., <strong>Knitr</strong>).</li>
+<li>Click <strong>Create Project</strong>.</li>
+</ul></li>
+<li><strong>Configure the Book Details</strong>
+<ul>
+<li>Open the <code>_quarto.yml</code> file. This is the brain of your book.</li>
+<li>Set your human-readable title, author details, and ensure there are no duplicate top-level keys.</li>
+<li><em>Example structure:</em></li>
+</ul></li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>GitHub</category>
+  <category>Tutorial</category>
+  <guid>https://msaif525.github.io/guideline-for-publish-ebook/posts/publish-quarto-book/</guid>
+  <pubDate>Fri, 04 Sep 2026 18:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O&#39;Malley</dc:creator>
   <link>https://msaif525.github.io/guideline-for-publish-ebook/posts/welcome/</link>
