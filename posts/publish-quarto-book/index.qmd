@@ -1,0 +1,21 @@
+---
+title: "How to Publish a Quarto Book using GitHub"
+author: "Mohammad Saifuddin"
+date: "2026-09-05"
+categories: [Quarto, GitHub, Tutorial]
+---
+
+Here is the complete, start-to-finish workflow for creating, configuring, and publishing a Quarto book using RStudio and GitHub. You can save this as a reference guide for your current and future eBook projects.
+
+### Phase 1: Local Project Setup
+
+1.  **Create the Project Directory**
+    - Open RStudio and navigate to **File > New Project > New Directory > Quarto Book**.
+    - **Crucial:** Name your directory using hyphens or underscores, with no spaces (e.g., `applied-statistics-probability-engineers`). Spaces can break command-line tools and LaTeX rendering.
+    - Check the boxes for **Create a git repository** and your preferred engine (e.g., **Knitr**).
+    - Click **Create Project**.
+
+2.  **Configure the Book Details**
+    - Open the `_quarto.yml` file. This is the brain of your book.
+    - Set your human-readable title, author details, and ensure there are no duplicate top-level keys.
+    - *Example structure:*
