@@ -1,7 +1,7 @@
 ---
 title: "Creating clone : Working from Home and Workstation"
 author: "Mohammad Saifuddin"
-date: "2026-09-05"
+date: today
 categories: [Quarto, GitHub, Tutorial]
 ---
 

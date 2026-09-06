@@ -26,5 +26,33 @@
     "title": "Creating clone : Working from Home and Workstation",
     "section": "",
     "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it.\nMake sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:\n\n1. Configure Your Git Identity\nRun once on the new PC.\nOpen Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:\nBash\ngit config --global user.name \"Mohammad Saifuddin\"\ngit config --global user.email \"your.email@example.com\"\nVerify: Run git config –global –list and ensure your name and email appear in the output.\n\n\n2.Clone the Repository\nDownloads your book’s files.\nIn the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:\nBash\ngit clone https://github.com/msaif525/your-repo-name.git"
+  },
+  {
+    "objectID": "posts/creating-clone/index.html#configure-your-git-identity",
+    "href": "posts/creating-clone/index.html#configure-your-git-identity",
+    "title": "Creating clone : Working from Home and Workstation",
+    "section": "1. Configure Your Git Identity",
+    "text": "1. Configure Your Git Identity\nRun once on the new PC./ Terminal or Git Bash.\nOpen Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:\nBash\ngit config --global user.name \"Mohammad Saifuddin\"\ngit config --global user.email \"your.email@example.com\"\nVerify: Run git config –global –list and ensure your name and email appear in the output."
+  },
+  {
+    "objectID": "posts/creating-clone/index.html#clone-the-repository",
+    "href": "posts/creating-clone/index.html#clone-the-repository",
+    "title": "Creating clone : Working from Home and Workstation",
+    "section": "2.Clone the Repository",
+    "text": "2.Clone the Repository\nDownloads your book’s files.\nIn the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:\nBash\ngit clone https://github.com/msaif525/your-repo-name.git\nA GitHub window will pop up asking you to sign in. Complete the login through your web browser to authenticate.\nVerify: A new folder with your repository name will appear on your hard drive, containing your .Rproj and .qmd files.\n3.Open, Edit, and Publish:\nThe standard workflow.\nOpen the .Rproj file in RStudio, make your text edits, and use your standard Phase 4 workflow in the RStudio Terminal:\nBash\ngit add .\ngit commit -m \"Updated from Office PC\"\ngit push quarto publish gh-pages\nVerify: Refresh your live GitHub Pages URL a minute later to confirm the updates are live.\n\n\n\n\n\n\nCautionThe Two-Computer Rule: Always Pull First\n\n\n\nBecause you are now working from two different machines, you must run git pull in the terminal every time you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a “merge conflict” error."
+  },
+  {
+    "objectID": "posts/creating-clone/index.html#part-1-one-time-setup-on-the-office-pc",
+    "href": "posts/creating-clone/index.html#part-1-one-time-setup-on-the-office-pc",
+    "title": "Creating clone : Working from Home and Workstation",
+    "section": "Part 1: One-Time Setup on the Office PC",
+    "text": "Part 1: One-Time Setup on the Office PC\nDo this only once to connect your office computer to your GitHub account and download your book’s files.\n\n1.Configure Git Identity:\nTerminal or Git Bash.\nTell Git who is making the edits by running these exact commands:\ngit config --global user.name \"Mohammad Saifuddin\"\ngit config --global user.email \"xyz@gmail.com\"\n\n\n2.Download the Repository:\nTerminal or Git Bash.\nNavigate to the folder where you want to store the project (e.g., cd Documents) and clone the repository. Replace your-repo-name with your actual eBook repository name:\ngit clone https://github.com/msaif525/your-repo-name.git\nNote: A browser window may pop up asking you to sign in to GitHub to authorize the connection.\n\n\n3.Open in RStudio:\nRStudio.\nLaunch RStudio, go to File &gt; Open Project, and select the .Rproj file located inside the newly downloaded folder."
+  },
+  {
+    "objectID": "posts/creating-clone/index.html#part-2-the-daily-cross-device-workflow",
+    "href": "posts/creating-clone/index.html#part-2-the-daily-cross-device-workflow",
+    "title": "Creating clone : Working from Home and Workstation",
+    "section": "Part 2: The Daily Cross-Device Workflow",
+    "text": "Part 2: The Daily Cross-Device Workflow\nBecause you are now editing the same book from two different computers (Home and Office), you must follow this exact sequence every time you sit down to work.\n\n1.Sync Latest Changes:\nCrucial first step.\nBefore typing a single word, open the RStudio Terminal and download any changes you might have made previously from your home laptop:\ngit pull\n\n\n2.Edit and Preview:\nRStudio.\nOpen your .qmd files, write your new content, and save. Use the Render button to preview the HTML locally and ensure your formatting and math formulas look correct.\n\n\n3.Save and Commit:\nRStudio Terminal.\nStage and label your new edits:\ngit add .\ngit commit -m \"Updated chapters from Office PC\"\n\n\n4.Push Source Code:\nRStudio Terminal.\nSend your updated .qmd files back to GitHub so they are safe and accessible when you return home:\ngit push\n5.Publish the Live Website:\nRStudio Terminal.\nTell Quarto to build the final web pages and push them to the public gh-pages branch:\nquarto publish gh-pages"
   }
 ]
