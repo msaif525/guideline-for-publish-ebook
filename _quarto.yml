@@ -4,7 +4,7 @@ project:
 website:
   description: "A blog built with Quarto"
   site-url: https://msaif525.github.io/guideline-for-publish-ebook
-  title: "Guideline for Publishing an eBook"
+  title: "Guideline for Publishing an eBook, Blog using Quarto and GitHub"
   navbar:
     right:
       - about.qmd

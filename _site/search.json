@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/publish-quarto-book/index.html",
+    "href": "posts/publish-quarto-book/index.html",
+    "title": "How to Publish a Quarto Book using GitHub",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Here is the complete, start-to-finish workflow for creating, configuring, and publishing a Quarto book using RStudio and GitHub. You can save this as a reference guide for your current and future eBook projects.\n\nPhase 1: Local Project Setup\n\nCreate the Project Directory\n\nOpen RStudio and navigate to File &gt; New Project &gt; New Directory &gt; Quarto Book.\nCrucial: Name your directory using hyphens or underscores, with no spaces (e.g., applied-statistics-probability-engineers). Spaces can break command-line tools and LaTeX rendering.\nCheck the boxes for Create a git repository and your preferred engine (e.g., Knitr).\nClick Create Project.\n\nConfigure the Book Details\n\nOpen the _quarto.yml file. This is the brain of your book.\nSet your human-readable title, author details, and ensure there are no duplicate top-level keys (like having format: listed twice).\nExample structure:\n\n\n\n\n\nPhase 2: Version Control (Git & GitHub)\n\nCommit Files Locally\n\nOpen the Terminal tab in RStudio (bottom-left pane).\nTrack and commit your initial files by running:\n\n\n\n\nCreate the Remote Repository\n\nGo to GitHub.com and create a New Repository.\nName it to match your folder (e.g., applied-statistics-probability-engineers).\nCrucial: Leave the repository completely blank. Do not check the boxes to add a README, .gitignore, or License.\n\nLink and Push\n\nCopy the terminal commands provided by GitHub under the section titled “…or push an existing repository from the command line”.\nPaste them into your RStudio Terminal. It will look like this:\n\n\n\n\n\nPhase 3: Publishing to the Web\n\nRender and Publish via Quarto\n\nIn your RStudio Terminal, run the built-in publishing command:\n\n\n\n\nQuarto will automatically render your .qmd files into HTML, push them to a hidden gh-pages branch on your GitHub repository, and configure GitHub Pages to host your live website.\nA browser window will open automatically with your live URL.\n\n\n\nPhase 4: The Daily Update Workflow\nWhenever you write a new chapter, edit _quarto.yml, or add local files (like PNG diagrams or datasets), follow this three-step cycle to update your live book:\n\nSave and Commit\n\nSave your files in RStudio.\nIn the Terminal, run:\n\n\n\nPush Code to GitHub\n\nSend your source code updates to your main repository:\n\n\nUpdate the Live Website\n\nTell Quarto to rebuild the HTML and update the public link:"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Guideline for Publishing eBook, Blog with Quarto and GitHub",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Creating clone : Working from Home and Workstation\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\n\n\n\n\n\n\n\nHow to Publish a Quarto Book using GitHub\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -21,17 +21,10 @@
     "text": "About this blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Guideline for Publishing an eBook",
+    "objectID": "posts/creating-clone/index.html",
+    "href": "posts/creating-clone/index.html",
+    "title": "Creating clone : Working from Home and Workstation",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nHow to Publish a Quarto Book using GitHub\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 2, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/publish-quarto-book/index.html",
-    "href": "posts/publish-quarto-book/index.html",
-    "title": "How to Publish a Quarto Book using GitHub",
-    "section": "",
-    "text": "Here is the complete, start-to-finish workflow for creating, configuring, and publishing a Quarto book using RStudio and GitHub. You can save this as a reference guide for your current and future eBook projects.\n\nPhase 1: Local Project Setup\n\nCreate the Project Directory\n\nOpen RStudio and navigate to File &gt; New Project &gt; New Directory &gt; Quarto Book.\nCrucial: Name your directory using hyphens or underscores, with no spaces (e.g., applied-statistics-probability-engineers). Spaces can break command-line tools and LaTeX rendering.\nCheck the boxes for Create a git repository and your preferred engine (e.g., Knitr).\nClick Create Project.\n\nConfigure the Book Details\n\nOpen the _quarto.yml file. This is the brain of your book.\nSet your human-readable title, author details, and ensure there are no duplicate top-level keys (like having format: listed twice).\nExample structure:\n\n\n\n\n\nPhase 2: Version Control (Git & GitHub)\n\nCommit Files Locally\n\nOpen the Terminal tab in RStudio (bottom-left pane).\nTrack and commit your initial files by running:\n\n\n\n\nCreate the Remote Repository\n\nGo to GitHub.com and create a New Repository.\nName it to match your folder (e.g., applied-statistics-probability-engineers).\nCrucial: Leave the repository completely blank. Do not check the boxes to add a README, .gitignore, or License.\n\nLink and Push\n\nCopy the terminal commands provided by GitHub under the section titled “…or push an existing repository from the command line”.\nPaste them into your RStudio Terminal. It will look like this:\n\n\n\n\n\nPhase 3: Publishing to the Web\n\nRender and Publish via Quarto\n\nIn your RStudio Terminal, run the built-in publishing command:\n\n\n\n\nQuarto will automatically render your .qmd files into HTML, push them to a hidden gh-pages branch on your GitHub repository, and configure GitHub Pages to host your live website.\nA browser window will open automatically with your live URL.\n\n\n\nPhase 4: The Daily Update Workflow\nWhenever you write a new chapter, edit _quarto.yml, or add local files (like PNG diagrams or datasets), follow this three-step cycle to update your live book:\n\nSave and Commit\n\nSave your files in RStudio.\nIn the Terminal, run:\n\n\n\nPush Code to GitHub\n\nSend your source code updates to your main repository:\n\n\nUpdate the Live Website\n\nTell Quarto to rebuild the HTML and update the public link:"
+    "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it.\nMake sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:\n\n1. Configure Your Git Identity\nRun once on the new PC.\nOpen Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:\nBash\ngit config --global user.name \"Mohammad Saifuddin\"\ngit config --global user.email \"your.email@example.com\"\nVerify: Run git config –global –list and ensure your name and email appear in the output.\n\n\n2.Clone the Repository\nDownloads your book’s files.\nIn the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:\nBash\ngit clone https://github.com/msaif525/your-repo-name.git"
   }
 ]

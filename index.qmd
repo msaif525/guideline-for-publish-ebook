@@ -1,5 +1,5 @@
 ---
-title: "Guideline for Publishing an eBook"
+title: "Guideline for Publishing eBook, Blog with Quarto and GitHub"
 listing:
   contents: posts
   feed: true

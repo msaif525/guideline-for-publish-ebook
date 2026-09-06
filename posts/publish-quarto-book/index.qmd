@@ -90,5 +90,3 @@ Whenever you write a new chapter, edit `_quarto.yml`, or add local files (like P
 - Tell Quarto to rebuild the HTML and update the public link:
 
 ![](images/clipboard-1130336772.png)
-
-
