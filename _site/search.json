@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Guideline for Publishing eBook, Blog with Quarto and GitHub",
     "section": "",
-    "text": "Creating clone : Working from Home and Workstation\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\n\n\n\n\n\n\n\nHow to Publish a Quarto Book using GitHub\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\nNo matching items"
+    "text": "Creating clone : Working from Home and Workstation\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 6, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\n\n\n\n\n\n\n\nHow to Publish a Quarto Book using GitHub\n\n\n\nQuarto\n\nGitHub\n\nTutorial\n\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\nMohammad Saifuddin\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -25,7 +25,7 @@
     "href": "posts/creating-clone/index.html",
     "title": "Creating clone : Working from Home and Workstation",
     "section": "",
-    "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it.\nMake sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:\n\n1. Configure Your Git Identity\nRun once on the new PC.\nOpen Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:\nBash\ngit config --global user.name \"Mohammad Saifuddin\"\ngit config --global user.email \"your.email@example.com\"\nVerify: Run git config –global –list and ensure your name and email appear in the output.\n\n\n2.Clone the Repository\nDownloads your book’s files.\nIn the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:\nBash\ngit clone https://github.com/msaif525/your-repo-name.git"
+    "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it.\nMake sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:"
   },
   {
     "objectID": "posts/creating-clone/index.html#configure-your-git-identity",

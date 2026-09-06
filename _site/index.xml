@@ -10,7 +10,7 @@
 <atom:link href="https://msaif525.github.io/guideline-for-publish-ebook/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 04 Sep 2026 18:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 05 Sep 2026 18:00:00 GMT</lastBuildDate>
 <item>
   <title>Creating clone : Working from Home and Workstation</title>
   <dc:creator>Mohammad Saifuddin</dc:creator>
@@ -132,7 +132,7 @@
   <category>GitHub</category>
   <category>Tutorial</category>
   <guid>https://msaif525.github.io/guideline-for-publish-ebook/posts/creating-clone/</guid>
-  <pubDate>Fri, 04 Sep 2026 18:00:00 GMT</pubDate>
+  <pubDate>Sat, 05 Sep 2026 18:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to Publish a Quarto Book using GitHub</title>
