@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
+<meta name="author" content="Mohammad Saifuddin">
 <meta name="dcterms.date" content="2026-09-05">
 
-<title>Post With Code – Guideline for Publishing an eBook</title>
+<title>Creating clone : Working from Home and Workstation – Guideline for Publishing an eBook, Blog using Quarto and GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -118,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Guideline for Publishing an eBook</span>
+    <span class="navbar-title">Guideline for Publishing an eBook, Blog using Quarto and GitHub</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -147,11 +112,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Creating clone : Working from Home and Workstation</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">GitHub</div>
+                <div class="quarto-category">Tutorial</div>
               </div>
                   </div>
   </div>
@@ -162,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Mohammad Saifuddin </p>
             </div>
     </div>
       
@@ -188,15 +153,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is a post with executable code.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<p>Suppose you have a project in your Home PC. To work from Office you need to <code>clone</code> it.</p>
+<p>Make sure you also install <strong>RStudio</strong> and the <strong>Quarto CLI</strong> on the office PC so you can render the HTML.</p>
+<p>Here is the exact setup for the new machine:</p>
+<section id="approach-i" class="level1">
+<h1>Approach I</h1>
+<section id="configure-your-git-identity" class="level2">
+<h2 class="anchored" data-anchor-id="configure-your-git-identity">1. Configure Your Git Identity</h2>
+<p><em>Run once on the new PC./ Terminal or Git Bash.</em></p>
+<p>Open Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:</p>
+<p><strong>Bash</strong></p>
+<p><code>git config --global user.name "Mohammad Saifuddin"</code></p>
+<p><code>git config --global user.email "your.email@example.com"</code></p>
+<p><em>Verify:</em> Run <em>git config –global –list</em> and ensure your name and email appear in the output.</p>
+</section>
+<section id="clone-the-repository" class="level2">
+<h2 class="anchored" data-anchor-id="clone-the-repository">2.Clone the Repository</h2>
+<p><em>Downloads your book’s files.</em></p>
+<p>In the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:</p>
+<p><strong>Bash</strong></p>
+<p><code>git clone https://github.com/msaif525/your-repo-name.git</code></p>
+<p>A GitHub window will pop up asking you to sign in. Complete the login through your web browser to authenticate.</p>
+<p><em>Verify:</em> A new folder with your repository name will appear on your hard drive, containing your <code>.Rproj</code> and <code>.qmd</code> files.</p>
+<p><strong>3.Open, Edit, and Publish:</strong></p>
+<p><em>The standard workflow.</em></p>
+<p>Open the <code>.Rproj</code> file in RStudio, make your text edits, and use your standard Phase 4 workflow in the RStudio Terminal:</p>
+<p><strong>Bash</strong></p>
+<p><code>git add .</code></p>
+<p><code>git commit -m "Updated from Office PC"</code></p>
+<p><code>git push quarto publish gh-pages</code></p>
+<p><em>Verify:</em> Refresh your live GitHub Pages URL a minute later to confirm the updates are live.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>The Two-Computer Rule: Always Pull First
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Because you are now working from two different machines, you must run <code>git pull</code> in the terminal <strong>every time</strong> you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a “merge conflict” error.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="approach-ii" class="level1">
+<h1>Approach II</h1>
+<section id="part-1-one-time-setup-on-the-office-pc" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-one-time-setup-on-the-office-pc">Part 1: One-Time Setup on the Office PC</h2>
+<p>Do this only once to connect your office computer to your GitHub account and download your book’s files.</p>
+<section id="configure-git-identity" class="level3">
+<h3 class="anchored" data-anchor-id="configure-git-identity"><strong>1.Configure Git Identity:</strong></h3>
+<p><em>Terminal or Git Bash.</em></p>
+<p>Tell Git who is making the edits by running these exact commands:</p>
+<p><code>git config --global user.name "Mohammad Saifuddin"</code></p>
+<p><code>git config --global user.email "xyz@gmail.com"</code></p>
+</section>
+<section id="download-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-repository"><strong>2.Download the Repository:</strong></h3>
+<p><em>Terminal or Git Bash.</em></p>
+<p>Navigate to the folder where you want to store the project (e.g., <code>cd Documents</code>) and clone the repository. Replace <code>your-repo-name</code> with your actual eBook repository name:</p>
+<p><code>git clone https://github.com/msaif525/your-repo-name.git</code></p>
+<p><em>Note: A browser window may pop up asking you to sign in to GitHub to authorize the connection.</em></p>
+</section>
+<section id="open-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="open-in-rstudio"><strong>3.Open in RStudio:</strong></h3>
+<p><em>RStudio.</em></p>
+<p>Launch RStudio, go to <strong>File &gt; Open Project</strong>, and select the <code>.Rproj</code> file located inside the newly downloaded folder.</p>
+</section>
+</section>
+<section id="part-2-the-daily-cross-device-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-the-daily-cross-device-workflow">Part 2: The Daily Cross-Device Workflow</h2>
+<p>Because you are now editing the same book from two different computers (Home and Office), you must follow this exact sequence every time you sit down to work.</p>
+<section id="sync-latest-changes" class="level3">
+<h3 class="anchored" data-anchor-id="sync-latest-changes"><strong>1.Sync Latest Changes:</strong></h3>
+<p><em>Crucial first step.</em></p>
+<p>Before typing a single word, open the RStudio Terminal and download any changes you might have made previously from your home laptop:</p>
+<p><code>git pull</code></p>
+</section>
+<section id="edit-and-preview" class="level3">
+<h3 class="anchored" data-anchor-id="edit-and-preview"><strong>2.Edit and Preview:</strong></h3>
+<p><em>RStudio.</em></p>
+<p>Open your <code>.qmd</code> files, write your new content, and save. Use the <strong>Render</strong> button to preview the HTML locally and ensure your formatting and math formulas look correct.</p>
+</section>
+<section id="save-and-commit" class="level3">
+<h3 class="anchored" data-anchor-id="save-and-commit"><strong>3.Save and Commit:</strong></h3>
+<p><em>RStudio Terminal.</em></p>
+<p>Stage and label your new edits:</p>
+<p><code>git add .</code></p>
+<p><code>git commit -m "Updated chapters from Office PC"</code></p>
+</section>
+<section id="push-source-code" class="level3">
+<h3 class="anchored" data-anchor-id="push-source-code"><strong>4.Push Source Code:</strong></h3>
+<p><em>RStudio Terminal.</em></p>
+<p>Send your updated <code>.qmd</code> files back to GitHub so they are safe and accessible when you return home:</p>
+<p><code>git push</code></p>
+<p><strong>5.Publish the Live Website:</strong></p>
+<p><em>RStudio Terminal.</em></p>
+<p>Tell Quarto to build the final web pages and push them to the public <code>gh-pages</code> branch:</p>
+<p><code>quarto publish gh-pages</code></p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

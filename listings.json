@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/creating-clone/index.html",
       "/posts/publish-quarto-book/index.html"
     ]
   }
