@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammad Saifuddin">
-<meta name="dcterms.date" content="2026-09-06">
+<meta name="dcterms.date" content="2026-09-07">
 
 <title>Creating clone : Working from Home and Workstation – Guideline for Publishing an eBook, Blog using Quarto and GitHub</title>
 <style>
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 6, 2026</p>
+        <p class="date">September 7, 2026</p>
       </div>
     </div>
     
@@ -156,50 +155,6 @@ ul.task-list li input[type="checkbox"] {
 <p>Suppose you have a project in your Home PC. To work from Office you need to <code>clone</code> it.</p>
 <p>Make sure you also install <strong>RStudio</strong> and the <strong>Quarto CLI</strong> on the office PC so you can render the HTML.</p>
 <p>Here is the exact setup for the new machine:</p>
-<section id="approach-i" class="level1">
-<h1>Approach I</h1>
-<section id="configure-your-git-identity" class="level2">
-<h2 class="anchored" data-anchor-id="configure-your-git-identity">1. Configure Your Git Identity</h2>
-<p><em>Run once on the new PC./ Terminal or Git Bash.</em></p>
-<p>Open Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:</p>
-<p><strong>Bash</strong></p>
-<p><code>git config --global user.name "Mohammad Saifuddin"</code></p>
-<p><code>git config --global user.email "your.email@example.com"</code></p>
-<p><em>Verify:</em> Run <em>git config –global –list</em> and ensure your name and email appear in the output.</p>
-</section>
-<section id="clone-the-repository" class="level2">
-<h2 class="anchored" data-anchor-id="clone-the-repository">2.Clone the Repository</h2>
-<p><em>Downloads your book’s files.</em></p>
-<p>In the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:</p>
-<p><strong>Bash</strong></p>
-<p><code>git clone https://github.com/msaif525/your-repo-name.git</code></p>
-<p>A GitHub window will pop up asking you to sign in. Complete the login through your web browser to authenticate.</p>
-<p><em>Verify:</em> A new folder with your repository name will appear on your hard drive, containing your <code>.Rproj</code> and <code>.qmd</code> files.</p>
-<p><strong>3.Open, Edit, and Publish:</strong></p>
-<p><em>The standard workflow.</em></p>
-<p>Open the <code>.Rproj</code> file in RStudio, make your text edits, and use your standard Phase 4 workflow in the RStudio Terminal:</p>
-<p><strong>Bash</strong></p>
-<p><code>git add .</code></p>
-<p><code>git commit -m "Updated from Office PC"</code></p>
-<p><code>git push quarto publish gh-pages</code></p>
-<p><em>Verify:</em> Refresh your live GitHub Pages URL a minute later to confirm the updates are live.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>The Two-Computer Rule: Always Pull First
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Because you are now working from two different machines, you must run <code>git pull</code> in the terminal <strong>every time</strong> you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a “merge conflict” error.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="approach-ii" class="level1">
-<h1>Approach II</h1>
 <section id="part-1-one-time-setup-on-the-office-pc" class="level2">
 <h2 class="anchored" data-anchor-id="part-1-one-time-setup-on-the-office-pc">Part 1: One-Time Setup on the Office PC</h2>
 <p>Do this only once to connect your office computer to your GitHub account and download your book’s files.</p>
@@ -253,9 +208,23 @@ ul.task-list li input[type="checkbox"] {
 <p><em>RStudio Terminal.</em></p>
 <p>Tell Quarto to build the final web pages and push them to the public <code>gh-pages</code> branch:</p>
 <p><code>quarto publish gh-pages</code></p>
+<p><em>Verify:</em> Refresh your live GitHub Pages URL a minute later to confirm the updates are live.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Two-Computer Rule: Always Pull First
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because you are now working from two different machines, you must run <code>git pull</code> in the terminal <strong>every time</strong> you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a “merge conflict” error.</p>
+</div>
+</div>
+<p>Hope this post will help you (at least me!).</p>
 
 
-</section>
 </section>
 </section>
 
@@ -311,14 +280,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
