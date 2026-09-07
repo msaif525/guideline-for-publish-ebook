@@ -5,9 +5,7 @@ date: today
 categories: [Quarto, GitHub, Tutorial]
 ---
 
-Suppose you have a project in your Home PC. To work from Office you need to `clone` it.
-
-Make sure you also install **RStudio** and the **Quarto CLI** on the office PC so you can render the HTML.
+Suppose you have a project in your Home PC. To work from Office you need to `clone` it. Make sure you also install **RStudio** and the **Quarto CLI** on the office PC so you can render the HTML.
 
 Here is the exact setup for the new machine:
 
