@@ -25,7 +25,7 @@
     "href": "posts/creating-clone/index.html",
     "title": "Creating clone : Working from Home and Workstation",
     "section": "",
-    "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it.\nMake sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:"
+    "text": "Suppose you have a project in your Home PC. To work from Office you need to clone it. Make sure you also install RStudio and the Quarto CLI on the office PC so you can render the HTML.\nHere is the exact setup for the new machine:"
   },
   {
     "objectID": "posts/creating-clone/index.html#part-1-one-time-setup-on-the-office-pc",
