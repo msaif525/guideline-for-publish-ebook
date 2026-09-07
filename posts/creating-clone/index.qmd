@@ -11,60 +11,6 @@ Make sure you also install **RStudio** and the **Quarto CLI** on the office PC s
 
 Here is the exact setup for the new machine:
 
-# Approach I
-
-## 1. Configure Your Git Identity
-
-*Run once on the new PC./ Terminal or Git Bash.*
-
-Open Git Bash or the Windows Command Prompt and run these two commands so GitHub knows who is making the edits. Use the exact email associated with your GitHub account:
-
-**Bash**
-
-`git config --global user.name "Mohammad Saifuddin"`
-
-`git config --global user.email "your.email@example.com"`
-
-*Verify:* Run *git config --global --list* and ensure your name and email appear in the output.
-
-## 2.Clone the Repository
-
-*Downloads your book's files.*
-
-In the terminal, navigate to the folder where you want to keep your project (e.g., cd Documents) and run:
-
-**Bash**
-
-`git clone https://github.com/msaif525/your-repo-name.git`
-
-A GitHub window will pop up asking you to sign in. Complete the login through your web browser to authenticate.
-
-*Verify:* A new folder with your repository name will appear on your hard drive, containing your `.Rproj` and `.qmd` files.
-
-**3.Open, Edit, and Publish:**
-
-*The standard workflow.*
-
-Open the `.Rproj` file in RStudio, make your text edits, and use your standard Phase 4 workflow in the RStudio Terminal:
-
-**Bash**
-
-`git add .`
-
-`git commit -m "Updated from Office PC"`
-
-`git push quarto publish gh-pages`
-
-*Verify:* Refresh your live GitHub Pages URL a minute later to confirm the updates are live.
-
-::: callout-caution
-## The Two-Computer Rule: Always Pull First
-
-Because you are now working from two different machines, you must run `git pull` in the terminal **every time** you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a "merge conflict" error.
-:::
-
-# Approach II
-
 ## Part 1: One-Time Setup on the Office PC
 
 Do this only once to connect your office computer to your GitHub account and download your book's files.
@@ -138,3 +84,13 @@ Send your updated `.qmd` files back to GitHub so they are safe and accessible wh
 Tell Quarto to build the final web pages and push them to the public `gh-pages` branch:
 
 `quarto publish gh-pages`
+
+*Verify:* Refresh your live GitHub Pages URL a minute later to confirm the updates are live.
+
+::: callout-caution
+## The Two-Computer Rule: Always Pull First
+
+Because you are now working from two different machines, you must run `git pull` in the terminal **every time** you sit down at either PC before you start typing. If you forget to pull the latest changes from the server, Git will block your uploads with a "merge conflict" error.
+:::
+
+Hope this post will help you (at least me!).
